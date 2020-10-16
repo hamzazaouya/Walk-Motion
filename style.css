@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 256px;
+    width: calc(1536px / 6);
+    background-image: url(motion.png);
+    animation: animate 1s steps(6) infinite;
+}
+
+@keyframes animate {
+    from{
+        background-position: 0;
+    }
+    
+    to{
+        background-position: -1536px;
+    }
+}
